@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Vikramaditya Foundation</title>
+    <link rel="icon" type="image/x-icon" href="/images/foundation LOGO.png">
+
+
+    <script src="javascripts/homepage.js"></script>
+    <script src="javascripts/volunteer.js"></script>
+
+    <link rel="stylesheet" href="styles/volunteer.css">
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Caveat:wght@400..700&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <div class="header">
+        <a href="homepage.html" class="home-link">
+            <div class="logo">
+                <img src="images/foundation LOGO.png" alt="Foundation Logo">
+            </div>
+            <div class="name">
+                VIKRAMADITYA<br>
+                CULTURAL & SOCIAL WELFARE FOUNDATION
+            </div>
+        </a>
+        
+        <nav class="menu">
+            <a href="homepage.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="campaign.html">Campaigns</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="donate.html">Donate</a>
+        </nav>
+        
+        <div class="menu-icon">
+            <img src="images/hamburger-menu-svgrepo-com.svg" alt="Menu">
+        </div>
+        
+        <div class="mobile-menu">
+            <a href="homepage.html">Home</a>
+            <a href="aboutUs.html">About Us</a>
+            <a href="campaign.html">Campaigns</a>
+            <a href="volunteer.html">Volunteer</a>
+            <a href="donate.html">Donate</a>
+        </div>
+    </div>
+
+    <main>
+        <section class="volunteer-hero">
+            <h1>Join Our Volunteer Family</h1>
+            <p>Be the change you wish to see in the world</p>
+        </section>
+
+        <div class="volunteer-options">
+            <h2>Choose Your Area of Service</h2>
+            <div class="volunteer-type" onclick="selectVolunteerType('tree-plantation', event)">
+                <h3>🌳 Tree Plantation Drives</h3>
+                <p>Help create green spaces in urban areas</p>
+            </div>
+            
+            <div class="volunteer-type" onclick="selectVolunteerType('education', event)">
+                <h3>📚 Educating Underprivileged Children</h3>
+                <p>Teach basic literacy and numeracy skills</p>
+            </div>
+            
+            <div class="volunteer-type" onclick="selectVolunteerType('food-distribution', event)">
+                <h3>🍲 Providing Food for people in need</h3>
+                <p>Help in Preparing / Distributing / Management</p>
+            </div>
+            
+            <div class="volunteer-type" onclick="selectVolunteerType('cloth-distribution', event)">
+                <h3>👕 Distributing clothes to poor</h3>
+                <p>Help in Sorting / Distributing / Management</p>
+            </div>
+            
+            <!-- Add other volunteer types similarly -->
+        </div>
+
+        <form class="volunteer-form" id="volunteerForm">
+            <input type="hidden" id="volunteerType" name="volunteer_type" required>
+
+            <div class="form-group">
+                <label for="fullName">Full Name *</label>
+                <input type="text" id="fullName" name="full_name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+            </div>
+
+            <div class="form-group address-grid">
+                <div>
+                    <label for="locality">Locality *</label>
+                    <input type="text" id="locality" name="locality" required>
+                </div>
+                <div>
+                    <label for="district">District *</label>
+                    <input type="text" id="district" name="district" required>
+                </div>
+                <div>
+                    <label for="city">City *</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <div>
+                    <label for="state">State *</label>
+                    <input type="text" id="state" name="state" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address (Optional)</label>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Why do you want to volunteer? (Optional)</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit Application</button>
+        </form>
+    </main>
+
+    <!-- Contact Panel -->
+<div class="contact-panel dark-theme">
+    <h2 class="section-title">Contact Us</h2>
+    <div class="contact-container">
+        <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>H.no.146, ward no.13 Patauapura,<br>Teh.- Shahpur, Distt.- Betul, M.P. 460440</p>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:vikramadityafoundation0204.gmail.com">contact@vikramadityafoundation0204</a>
+        </div>
+        <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <div class="phone-numbers">
+                <a href="tel:+919407201648">+919407201648</a>
+                <a href="tel:+917974631130">+917974631130</a>
+            </div>
+        </div>
+        
+        <div class="contact-item">
+            <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/vikramaditya_foundation_ngo" target="_blank">@vikramaditya_foundation_ngo</a>
+        </div>
+    </div>
+</div>
+
+<!-- Add this before </body> -->
+<div id="toast">
+    <h3>Success!</h3>
+    <p>Form submitted successfully!</p>
+</div>
+
+</body>
+</html>

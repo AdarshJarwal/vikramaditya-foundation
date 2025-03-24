@@ -1,0 +1,85 @@
+.campaigns-hero {
+    background: linear-gradient(rgb(223, 119, 27), rgb(208, 197, 127)), url('images/campaign-hero.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 2rem 4rem;
+    margin-bottom: 4rem;
+}
+
+
+.campaigns-hero h1 {
+    font-family: 'Caveat', cursive;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.campaign-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.campaign-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 2rem 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.campaign-card h2 {
+    color: #e74c3c;
+    margin-bottom: 1rem;
+    font-family: 'Caveat', cursive;
+    font-size: 2.5rem;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.image-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit:contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.image-grid img:hover {
+    transform: scale(1.05);
+}
+
+.call-to-action {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+}
+
+.call-to-action blockquote {
+    font-family: 'Caveat', cursive;
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 2rem;
+}
+
+.volunteer-button2 {
+    background: #e74c3c;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.volunteer-button2:hover {
+    background: #c0392b;
+    transform: translateY(-3px);
+}

@@ -1,0 +1,94 @@
+/* Similar to volunteer.css with these additions */
+.donation-type {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 1rem 0;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.donation-options {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 2rem;
+}
+
+.donation-options h2{
+    font-family: 'Caveat', cursive;
+    color: #d68d02;
+    font-size: 40px;
+}
+
+.donation-type:hover {
+    transform: translateY(-5px);
+    border: 2px solid #27ae60;
+}
+
+.donate-hero {
+    background: linear-gradient(rgb(199, 11, 8), rgb(244, 129, 129)), 
+                url('images/volunteer-hero.jpg') center/cover;
+    padding: 6rem 2rem 4rem;
+    text-align: center;
+    color: white;
+}
+
+.donate-hero h1{
+    font-family: 'Caveat', cursive;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+/* Match volunteer page's selection style */
+.donation-type.selected {
+    border: 2px solid #27ae60;
+    background-color: #f8fff9;
+}
+
+.donation-type h3 {
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.donation-type p {
+    color: #666;
+    font-size: 0.9rem;
+}
+@media (max-width: 768px) {
+    .donation-options {
+        padding: 0 1rem;
+    }
+    
+    .donation-type {
+        margin: 0.5rem 0;
+        padding: 1rem;
+    }
+    
+    .address-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.form-group label:after {
+    content: " *";
+    color: #e74c3c;
+    display: none;
+}
+
+.form-group label[required]:after {
+    display: inline;
+}
+
+/* Match volunteer form styling */
+.donation-form {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}

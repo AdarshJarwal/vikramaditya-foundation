@@ -1,0 +1,101 @@
+/* About Page Specific Styles */
+.founders-section h2{
+    font-size: 25px;
+    color: rgb(104, 100, 92);
+}
+
+.founders-section h3{
+    color: #d68d02;
+}
+
+.about-section {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-family: 'Caveat', cursive;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.founders-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.founder-card {
+    background: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.focus-section h2{
+    color: blueviolet;
+}
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.focus-item {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.focus-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.focus-item h3 {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(44, 62, 80, 0.8);
+    color: white;
+    padding: 1rem;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.mission-quote {
+    background: rgb(159, 226, 249);
+    padding: 2rem;
+    border-radius: 10px;
+    margin: 3rem 0;
+    text-align: center;
+    
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.mission-quote blockquote {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1.8rem;
+    color: #464a4d;
+    margin: 0;
+    line-height: 1.4;
+    background-color: rgb(159, 226, 249);
+    padding: 10px ;
+}
+
+@media (max-width: 768px) {
+    .founders-grid,
+    .focus-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .mission-quote blockquote {
+        font-size: 1.4rem;
+    }
+}
